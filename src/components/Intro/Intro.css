@@ -1,0 +1,116 @@
+.intro{
+    display: flex;
+    height: 68vh;
+    margin-top: 6rem;
+    /* background-color: red; */
+}
+.i-left{
+    display: flex;
+    position: relative;
+    flex: 4;
+    flex-direction: column;
+    gap: 2rem;
+}
+.i-name{
+    display: flex;
+    flex-direction: column;
+}
+.i-name>:nth-child(1){
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.i-name>:nth-child(2){
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.i-name>:nth-child(3){
+    color: var(--gray);
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.i-button{
+    width: 6rem;
+    height: 2rem;
+}
+.i-icons{
+    display: flex;
+    margin-top: 3rem;
+    gap: 0rem;
+}
+.i-icons>*{
+    transform: scale(0.5);
+}
+.i-icons>*:hover{
+    cursor: pointer;
+}
+
+.i-right{
+    flex: 3;
+    position: relative;
+   
+}
+.i-right>*{
+    position: absolute;
+    z-index: 1;
+    
+}
+/* change korcilm  */
+.i-right>:nth-child(1){
+    transform: scale(0.80);
+    left: -15%;
+    top: -9%;
+}
+.i-right>:nth-child(2){
+    top: -4.6rem;
+    left: -3rem;
+    transform: scale(0.80);
+}
+.i-right>:nth-child(3){
+    left: 18%;
+    transform: scale(1.5);
+}
+
+.i-right>:nth-child(4){
+  transform: scale(0.6);
+  top: -19%;
+  left: -24%;
+  border-radius: 50%;
+  padding: 0;
+}
+ 
+.blur{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    z-index: -9;
+    top: -10%;
+    left: 56%;
+    filter: blur(72px);
+}
+
+@media screen and (max-width: 480px) {
+    .intro {
+      flex-direction: column;
+      gap: 7rem;
+      height: 67rem;
+      /* border: 1px solid springgreen; */
+    }
+  
+    .i-right {
+      transform: scale(0.8);
+      left: 0;
+      top: -10rem;
+    }
+    .i-right .blur {
+      display: none;
+    }
+    .floating-div:nth-of-type(1){
+      /* display: none; */
+      top: -7rem !important;;
+    }
+  }
